@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, rgba(219, 112, 147, 1) 0%, rgba(115, 109, 187, 1) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.search-box {
+    width: 600px; /* Set the width as desired for the div */
+    height: 300px; /* Set the height as desired for the div */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    cursor: crosshair;
+}
+
+input[type="text"] {
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.temperature-unit {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.temperature-unit label {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6ab04c;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4f7b2e;
+}
+
+.weather-info {
+    width: 350px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Adjusted to space items evenly */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.city-temperature,
+.icons {
+    flex-basis: calc(30% - 20px); /* Adjust the width and margin between items */
+    text-align: center; /* Center text within child elements */
+    margin: 10px; /* Adjust the margin between items */
+}
+
+#weather-icon,
+#wind-icon {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.button-class {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease, transform 0.2s ease; /* Add a smooth transition effect */
+}
+
+.button-class:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add a glowing effect on hover */
+}
+
+.button-class:active {
+    transform: scale(0.85); /* Add a scaling effect when the button is pressed */
+}
+input[type="text"]{
+    text-align: center;
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+    transition: border-color 6s linear;
+}
+input[type="text"]:focus{
+    outline: none;
+    border: 0.5px solid;
+    border-color: #3498db;;
+}
+p{
+    width: 150px;
+}
+img{
+    height: 500px;
+}
